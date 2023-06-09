@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Página teste de pseudo-classe</title>
+    <style>
+        div:hover > p {
+        display: block;
+        color: white;
+        background-color: red;
+        width: 300px;
+        }
+
+        
+        div:hover{
+            color: red;
+        }
+
+        div > p{
+            display: none;
+        }
+
+        .especial{
+        background-color:rgba(190, 54, 54, 0.534) ;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de HOUVER</h1>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div>
+    Passe o mouse aqui
+    <p>Texto ESCONIDO...</p>
+    </div>
+
+    <a href="pseudoclasse.html" target="_self" rel="next" class="especial">Clique aqui para voltar.</a>
+
+</body>
+</html>

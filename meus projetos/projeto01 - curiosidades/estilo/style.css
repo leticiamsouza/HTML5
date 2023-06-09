@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+
+:root {
+ --cor01:#348F07;
+ --cor02:#3743DB;
+ --cor03:#5FDB21;
+ --cor04:#DB490B;
+ --cor05:#8F350E;
+
+ --fonte01: 'Passion One', cursive;
+}
+
+header {
+    background-color: var(--cor01);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header > h1 {
+    font-family: var(--fonte01);
+    font-variant: small-caps;
+    font-size: 9vh;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.601);
+}
+
+body {
+   
+    min-width: 200px;
+    margin: 0%;
+    font-family: arial;
+    font-size: 2.5vh;
+    
+}
+
+main {
+    margin: 0px;
+    text-indent: 10px;
+    text-align: justify;
+    line-height: 1.8em;
+}
+
+article > h1, h2 {
+    background-image: linear-gradient(to right, var(--cor03), white);
+    padding: 5px;
+    font-size: 3.5vh;
+}
+
+p {
+    margin: 10px;
+}
+
+img {
+    margin: auto;
+    height: 300px;
+    width: 500px;
+    padding-left: 67vh;
+}
+
+.video {
+    margin:auto;
+    height: ;
+}
+
+footer {
+    background-color: var(--cor01);
+    padding: 1px;
+    font-family:var(--fonte01);
+    font-size: 3vh;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.601);
+    color: rgb(247, 247, 249);
+}

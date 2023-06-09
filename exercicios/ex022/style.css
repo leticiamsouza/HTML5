@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+body{
+    height: 100vh;
+    background: black url(imagens/wallpaper001.jpg) center center no-repeat fixed;
+    background-size: cover;      
+    
+    
+}
+
+header{
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    border: 2px  solid black;
+    border-bottom: none;
+}
+
+h1{
+    text-shadow: 4px 2px rgba(148, 148, 148, 0.496);
+}
+
+nav{
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 15px;
+    border: 2px  solid black;
+    border-top: none;
+}
+
+nav > a{ 
+    background-color: rgba(171, 169, 169, 0.326);
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.581);
+    border-radius: 10px;
+    text-decoration: none; 
+    color: black;
+}
+
+nav > a:hover {
+    background-color: rgba(0, 0, 0, 0.548);
+    color: white;
+}
+
+main {
+    background-color: white;
+    border: 2px  solid black;
+    max-width: 600px;
+    margin-top: 3px;
+    margin: auto;
+    padding:10px;
+    text-align: justify;
+    text-indent: 10px;
+}
+
+footer {
+    background-color: white;
+    margin: auto;
+    max-width: 620px;
+    border: 2px solid black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+
+img{
+    display: block;
+    max-width: 350px;
+    margin: auto;
+}
