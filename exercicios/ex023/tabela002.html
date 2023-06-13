@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(127, 255, 212, 0.589);
+        }
+        
+        thead, tfoot {
+            background-color: rgba(28, 27, 27, 0.944);
+            color: white;
+        }
+        
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(28, 27, 27);
+        }
+
+        tbody > tr:nth-child(odd)/* no lugar de ODD pode usar 2n-1 */{
+            background-color:darkgrey ;
+        }
+
+        tbody > tr:nth-child(even)/* no lugar de EVEN pode usar 2n */{
+            background-color:rgb(223, 226, 165) ;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .num { 
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES 
+        TABLE
+        CAPITION - Legenda 
+        THEAD - CABEÇA DA TABELA
+          TR, TD, TH
+        TBODY - CORPO DA TABELA
+          TR, TD, TH 
+        TFOOT - PÉ 
+          TR, TD, TH
+    -->
+    <table>
+        <caption>Quantidade populacional de acordo com os Estados</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 016 906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10 444 526</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 693 929</td>
+            </tr>
+            <tr>
+                <td>Pernanbuco</td>
+                <td class="num">8 796 448</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 452 381</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">7 581 051</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">6 248 436</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">6 003 788</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+            <td>0000001</td>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellendus ea doloremque eum voluptatem itaque ipsa delectus molestiae quod provident, sapiente minus dolorem dicta praesentium fugiat voluptatum assumenda impedit libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ipsam, soluta nihil eum provident aliquid voluptatibus dolore repudiandae! Facilis odit nobis libero at quo cumque obcaecati harum consectetur labore dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur sed velit error vitae impedit, reiciendis nobis, ut sit fuga, atque quod ducimus commodi magni. Iusto possimus doloremque sint suscipit rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquid eius, praesentium dignissimos, tempora deserunt aperiam beatae saepe iure soluta dicta unde ducimus impedit repellat assumenda enim nulla maxime reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis autem provident ratione aspernatur odio ipsam necessitatibus facilis quia deleniti distinctio temporibus officiis asperiores beatae laudantium magni eum sunt, magnam iste?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellendus ea doloremque eum voluptatem itaque ipsa delectus molestiae quod provident, sapiente minus dolorem dicta praesentium fugiat voluptatum assumenda impedit libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ipsam, soluta nihil eum provident aliquid voluptatibus dolore repudiandae! Facilis odit nobis libero at quo cumque obcaecati harum consectetur labore dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur sed velit error vitae impedit, reiciendis nobis, ut sit fuga, atque quod ducimus commodi magni. Iusto possimus doloremque sint suscipit rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquid eius, praesentium dignissimos, tempora deserunt aperiam beatae saepe iure soluta dicta unde ducimus impedit repellat assumenda enim nulla maxime reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis autem provident ratione aspernatur odio ipsam necessitatibus facilis quia deleniti distinctio temporibus officiis asperiores beatae laudantium magni eum sunt, magnam iste?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellendus ea doloremque eum voluptatem itaque ipsa delectus molestiae quod provident, sapiente minus dolorem dicta praesentium fugiat voluptatum assumenda impedit libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ipsam, soluta nihil eum provident aliquid voluptatibus dolore repudiandae! Facilis odit nobis libero at quo cumque obcaecati harum consectetur labore dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur sed velit error vitae impedit, reiciendis nobis, ut sit fuga, atque quod ducimus commodi magni. Iusto possimus doloremque sint suscipit rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquid eius, praesentium dignissimos, tempora deserunt aperiam beatae saepe iure soluta dicta unde ducimus impedit repellat assumenda enim nulla maxime reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis autem provident ratione aspernatur odio ipsam necessitatibus facilis quia deleniti distinctio temporibus officiis asperiores beatae laudantium magni eum sunt, magnam iste?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellendus ea doloremque eum voluptatem itaque ipsa delectus molestiae quod provident, sapiente minus dolorem dicta praesentium fugiat voluptatum assumenda impedit libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ipsam, soluta nihil eum provident aliquid voluptatibus dolore repudiandae! Facilis odit nobis libero at quo cumque obcaecati harum consectetur labore dignissimos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur sed velit error vitae impedit, reiciendis nobis, ut sit fuga, atque quod ducimus commodi magni. Iusto possimus doloremque sint suscipit rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquid eius, praesentium dignissimos, tempora deserunt aperiam beatae saepe iure soluta dicta unde ducimus impedit repellat assumenda enim nulla maxime reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis autem provident ratione aspernatur odio ipsam necessitatibus facilis quia deleniti distinctio temporibus officiis asperiores beatae laudantium magni eum sunt, magnam iste?</p>
+</body>
+</html>
