@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Curiosidades</title>
+  <link rel="stylesheet" href="estilo/style.css">
+</head>
+
+<header>
+    <h2>Curiosidades sobre diversos assuntos</h2>
+</header>
+
+<body>
+
+  <div class="categorias">
+    <button onclick="mostrarCategoria('categoria1')">Bronzeado</button>
+    <button onclick="mostrarCategoria('categoria2')">Brinco</button>
+    <button onclick="mostrarCategoria('categoria3')">Categoria 3</button>
+  </div>
+
+  <div id="categoria1" class="conteudo ativa">
+    <h1>O bronzeado é bonito, porém terrível para o nosso organismo.</h1>
+    <p>Você sabia que os bronzeados, seja natural ou não, não são saudáveis para nós? </p><br>
+
+            <picture>
+                <source media="(max-width: 670)" srcset="imagens/bronzeado02.jpg">
+                <img src="imagens/bronzeado02.jpg" alt="Bronzeado" class="imagem-responsiva">
+            </picture>
+
+            <h2>Por quê isso acontece?</h2>
+
+            <p>O bronzeado é uma defesa natural das nossas células da pele a um dano cauzado ao seu DNA, a partir da exposição prolongada a radiação ultravioleta. </p>
+
+            <h2>Como isso ocorre?</h2>
+
+            <p>Conforme a exposição a radiação ultravioleta acontece, as nossas células da pele aumentam o nivel de produção de melanina, a fim de amenizar os danos causados ao DNA. Uma vez que essa medida não é totalmente eficaz, as células acabam entrando em apoptose (um meio de auto destuição induzida), a fim de evitar que o dano provocado ao material genético evolua para um melanoma (câncer de pele). <br>
+            De acordo com o <a href="https://www.inca.gov.br/assuntos/cancer-de-pele" target="_blank">Instituto Nacional de Câncer (INCA)</a>, o câncer de pele é o mais frequênte no Brasil e corresponde a cerca de 30% de todos os tumores malignos registrados no país, assim como atinge mais frequentemente os adultos branco, e em indivíduos de pele negra, é mais comum nas regiôes claras do corpo, como palmas das mãos e plantas dos pés. <br>
+            Portanto, antes de se expor aos raios solares, é importante aplicar protetor solar no corpo, em especial nas regiões mais sensíveis, assim como acho bom pensar duas vezes antes de fazer aquele branzeado artificial. 
+            Segue um vídeo, curto, porém recheado de dicas legais de como protejer a nossa pele.  
+            </p>
+
+         <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/qFPlAPLhfao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+  <div id="categoria2" class="conteudo">
+    <h1>Você já notou o acumulo de massa no seu brinco?</h1>
+    <p>
+        Você já observou, alguma vez na sua vida, que há o acumulo de massa -podendo ter mal cheiro ou não-, no seu brinco após algum tempo de uso? 
+    </p>
+
+    <img src="https://s2-oglobo.glbimg.com/rIZrzteIAKP3mXzLe-i35zsOi18=/0x0:2000x1194/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/z/2/WGbucOR2yQH4GIDCCrsQ/arte.png" alt="Orelha" class="imagem-responsiva">
+
+    <h2>Por quê isso acontece?</h2>
+
+    <p>
+        Após algum tempo de uso, acaba ocorrendo o acumulo de células mortal, assim como secreção natural da pele ao redor do furo da orelha, em especial durante a cicatrização. 
+    </p>
+    <p>
+        Em algumas situações, esse aculumo pode ser um sinal de infecção ou inflamação.
+    </p>
+    <p>
+        Por tanto, fique atento a sinais como: vermelhidão, inchaço, puriodo e/ou mal cheiro, que indicam infecções e inflamações. Caso não haja nem um dos sinais sitados, apenas mantenha a higienização dos brincos, assim como da região do furo.
+    </p>
+  </div>
+
+  <div id="categoria3" class="conteudo">
+    <h2>Conteúdo da Categoria 3</h2>
+    <p>Texto ou elementos relacionados à Categoria 3.</p>
+  </div>
+
+  <script>
+    function mostrarCategoria(id) {
+      const categorias = document.querySelectorAll('.conteudo');
+      categorias.forEach(cat => cat.classList.remove('ativa'));
+      document.getElementById(id).classList.add('ativa');
+    }
+  </script>
+
+</body>
+
+<footer>
+    <p>Site criado por Letícia Martins.</p>
+</footer>
+
+</html>
