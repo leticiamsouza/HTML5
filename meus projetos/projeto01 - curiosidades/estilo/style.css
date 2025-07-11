@@ -14,10 +14,15 @@
 }
 
 header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
     background-color: var(--cor01);
     color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    margin: 0px;
+    
 }
 
 header > h2 {
@@ -26,10 +31,14 @@ header > h2 {
     font-size: 9vh;
     text-align: center;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.601);
+    
 }
 
 .categorias {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+   
   }
 
   .categorias button {
@@ -39,6 +48,7 @@ header > h2 {
     padding: 8px 16px;
     border-radius: 30px;
     cursor: pointer;
+    border-color: #3743DB;
   }
 
   .conteudo {
@@ -47,28 +57,27 @@ header > h2 {
 
   .conteudo.ativa {
     display: block;
+    
   }
 
 body {
-   
+    max-width: 100%;
     min-width: 200px;
-    margin: 0%;
+    margin: 13% auto 0px;
     font-family: arial;
     font-size: 2.5vh;
+   
     
-}
-
-main {
-    margin: 0px;
-    text-indent: 10px;
-    text-align: justify;
-    line-height: 1.8em;
 }
 
 h1 {
     background-image: linear-gradient(to right, var(--cor03), white);
     padding: 5px;
     font-size: 3.5vh;
+}
+
+h2 {
+    margin-left: 10px;
 }
 
 p {
@@ -79,6 +88,8 @@ p {
     max-width: 100%;
     height: auto;
     display: block;
+    margin: auto;
+    
 }
 
 .video {
