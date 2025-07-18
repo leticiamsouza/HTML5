@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <h1>Emplo de formulário</h1>
+    
+    <form action="cadastro.php" method="get" autocomplete="on">
+     <p>
+        <label for="iest">Estado</label>
+        <select name="estado" id="iest" required>
+          
+            <optgroup label="Região Norte">
+                <option value="PA">Pará</option>
+                <option value="AC">Acre</option>
+                <option value="AM">Amapá</option>
+            </optgroup>
+
+            <optgroup label="Região Sul">
+                <option value="SC">Santa Catarina</option>
+                <option value="RGS">Rio Grande de Sul</option>
+                <option value="PAR">Paraná</option>
+            </optgroup>
+
+        </select>
+     </p>
+     <p>
+        <label for="iprof">Profissões</label>
+        <input type="text" name="prof" id="icor" list="lstprof" required>
+        <datalist id="lstprof">
+            <option value="VQ">Vaqueiro</option>
+            <option value="TI">Técnico de Informação</option>
+            <option value="MQ">Maqueadora</option>
+        </datalist>
+     </p>
+     <p>
+        <label for="imsg">Menssagem:</label> <br>
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+     </p>
+
+     <input type="submit" value="Enviar">
+     <input type="reset" value="Apagar">
+
+    </form>
+
+</body>
+</html>
